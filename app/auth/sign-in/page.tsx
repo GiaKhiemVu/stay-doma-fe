@@ -193,7 +193,7 @@ export default function SignInPage() {
                     <Box
                         sx={{
                             height: 3,
-                            width: 48,
+                            width: 80,
                             borderRadius: 2,
                             mb: 2,
                             background: `linear-gradient(90deg, ${alpha(bgPrimary, 0.9)}, ${alpha(bgPrimary, 0.4)})`,
