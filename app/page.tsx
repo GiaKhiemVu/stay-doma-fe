@@ -8,10 +8,14 @@ export default function Home() {
 
   const testAPI = async () => {
     await axiosAPI.get("/test", { backgroundLoading: false });
+    success("Fetch API success to /test")
   }
 
   const testNotify = () => {
-    success("Test Notify")
+    success("Test Notify 1")
+    info("Test Notify 2")
+    warning("Test Notify 3")
+    error("Test Notify 4")
   }
 
   return (
