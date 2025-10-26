@@ -1,5 +1,5 @@
 // app/layout.tsx
-import Providers from "./providers/Provider";
+import Providers from "./providers/Providers";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

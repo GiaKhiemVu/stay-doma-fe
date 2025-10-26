@@ -34,13 +34,11 @@ export default function SignInPage() {
     const { simulate } = useLoading();
     const { success, error, info } = useNotify();
 
-    // border radius helper -> number
     const br = (mult = 1) => {
         const v = theme.shape.borderRadius as unknown;
         const base =
             typeof v === "number" ? v : typeof v === "string" ? parseFloat(v) || 10 : 10;
         return base * mult;
-        // use: br(1), br(0.8), br(1.2)
     };
 
     const [showPwd, setShowPwd] = React.useState(false);
